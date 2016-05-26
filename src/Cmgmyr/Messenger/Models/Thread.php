@@ -11,6 +11,8 @@ class Thread extends Eloquent
 {
     use SoftDeletes;
 
+    protected $appends = ['latest_message'];
+
     /**
      * The database table used by the model.
      *
